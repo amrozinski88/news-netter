@@ -53,10 +53,6 @@ module.exports = app => {
             }
           }
         });
-        
-        db.Note.create({
-          content: "my first note"
-        });
         db.Article.create(scrapedItems)
           .then(articles => {
             res.json(articles);
