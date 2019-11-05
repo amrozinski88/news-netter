@@ -1,0 +1,19 @@
+.jumbotron {
+    background: url("/assets/images/jumboImg.jpeg") no-repeat center center;
+    color: white;
+    font-weight: bolder;
+    height: 350px;
+}
+
+.jumbotron h1 {
+    font-size: 4rem;
+}
+
+#deleteNoteBtn {
+    height: 40px;
+    margin: 0;
+}
+
+.list-group-item .col-9{
+    padding: 0;
+}

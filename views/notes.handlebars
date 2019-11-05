@@ -1,0 +1,19 @@
+<div class="notesSection col-md-6">
+    <h2>{{title}}</h2>
+    <h5>Anonymous opinions:</h5>
+    <form>
+        <ul class="list-group">
+            {{#each notes}}
+            <li class="note d-flex align-items-center list-group-item my-2">
+                <p class="col-9">{{content}}</p>
+                <button data-noteId="{{id}}" class="col-3 btn bg-info mx-2" id="deleteNoteBtn">Delete Note</button>
+            </li>
+            {{/each}}
+        </ul>
+        <div class="form-group">
+            <label for="notePad">Write your notes here:</label>
+            <textarea class="form-control" id="notePad" rows="3"></textarea>
+            <button class="btn  bg-success my-3" id="noteSubmitBtn" data-articleid="{{id}}">Submit</button>
+        </div>
+    </form>
+</div>

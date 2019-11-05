@@ -1,0 +1,11 @@
+<ul class="list-group">
+{{#each articles}}
+<li class="list-group-item">
+    <h2><a href={{link}} target="_blank">{{title}}</a></h2>
+     <p>{{summary}}</p>
+     <p>Published {{published}} hours ago</p>
+     <button class="btn bg-warning notesBtn" data-articleid="{{_id}}" >View Notes</button>
+    </li>
+{{/each}}
+<ul>
+<button class="btn bg-info" id="scrapeBtn">Get new articles</button>
