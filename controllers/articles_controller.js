@@ -53,12 +53,7 @@ module.exports = app => {
             }
           }
         });
-        scrapedItems.push({
-          title: "test5",
-          summary: "sumtest5",
-          link: "testlink5",
-          published: 6
-        });
+        
         db.Note.create({
           content: "my first note"
         });
